@@ -1,4 +1,7 @@
 pipeline {
+      options {
+      timeout(time: 20, unit: 'MINUTES') 
+  }
     agent any
     environment {
         //be sure to replace "willbla" with your own Docker Hub username
